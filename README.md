@@ -39,8 +39,10 @@ Post Comments: After retrieving weather information, you can leave comments abou
 View Profile: Users can check their profile to view their search history and comments.
 API Endpoints
 1. **Get Weather Data**
-Endpoint: GET /api/weather/{city}
+Endpoint: GET /api/weather/{city}.
+
 Description: Fetches weather data for a specified city.
+
 Request Parameters:
 city: Name of the city to get weather information for.
 Response Format:
@@ -55,7 +57,7 @@ Response Format:
   "min_temp": "Min temperature",
   "max_temp": "Max temperature"
 }
-2. **Post Comment**
+3. **Post Comment**
 Endpoint: POST /api/comments/
 Description: Allows a user to post a comment about the weather.
 Request Body:
