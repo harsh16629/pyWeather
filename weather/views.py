@@ -12,7 +12,7 @@ def city_weather(request):
     city = request.GET.get('city')
 
     if city:
-        api_key = open('api_key.txt','r').read()
+        #api_key = "enter_your_openweathermap_API_KEY_here"
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
         response = requests.get(url)
         data = response.json()
