@@ -33,19 +33,20 @@ To set up the Weather Application locally, follow these steps:
    python manage.py runserver
 7. **Open Your Browser: Go to http://127.0.0.1:8000 to view the application.**
 
-Usage Examples
-Search Weather: Navigate to the home page and enter a city name to fetch the weather details.
-Post Comments: After retrieving weather information, you can leave comments about your thoughts or experiences regarding the weather.
-View Profile: Users can check their profile to view their search history and comments.
-API Endpoints
+##Usage Examples
+**Search Weather:** Navigate to the home page and enter a city name to fetch the weather details.
+**Post Comments:** After retrieving weather information, you can leave comments about your thoughts or experiences regarding the weather.
+**View Profile:*** Users can check their profile to view their search history and comments.
+
+##API Endpoints
 1. **Get Weather Data**
-Endpoint: GET /api/weather/{city}.
+***Endpoint:*** GET /api/weather/{city}.
 
-Description: Fetches weather data for a specified city.
+***Description:*** Fetches weather data for a specified city.
 
-Request Parameters:
-city: Name of the city to get weather information for.
-Response Format:
+***Request Parameters:***
+***city:*** Name of the city to get weather information for.
+***Response Format:
 {
   "city": "City Name",
   "temperature": "Value in °C",
@@ -56,28 +57,28 @@ Response Format:
   "weather_description": "Description of the weather",
   "min_temp": "Min temperature",
   "max_temp": "Max temperature"
-}
+}***
 3. **Post Comment**
-Endpoint: POST /api/comments/
-Description: Allows a user to post a comment about the weather.
-Request Body:
+***Endpoint:*** POST /api/comments/
+***Description:*** Allows a user to post a comment about the weather.
+***Request Body:
 {
   "comment": "Your comment text here"
 }
 Response Format:
 {
   "message": "Comment added successfully."
-}
-**Authentication Requirements**
+}***
+##Authentication Requirements
 Users must be authenticated to post comments.
 Use the login credentials to access the comment functionality.
 Registration is required for new users.
-**License**
+##License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 **Contributing**
 Contributions are welcome! Please create a pull request or open an issue to discuss your ideas.
 
-**Acknowledgments**
+##Acknowledgments
 Django for the web framework.
 Bootstrap for the front-end framework.
 OpenWeatherMap for weather data API.
